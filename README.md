@@ -1,4 +1,4 @@
-#Applitools Storybook Angular Tutorial
+# Applitools Storybook Angular Tutorial
 
 Please see [https://applitools.com/tutorials/storybook-angular.html](https://applitools.com/tutorials/storybook-angular.html)
 
