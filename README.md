@@ -14,7 +14,7 @@ Please see [https://applitools.com/tutorials/storybook-angular.html](https://app
 ### Add Storybook executable
 Installs storybook executable. We can use this to automatically add Storybook deps and configs to existing projects
 
- - `sudo npm i -g @storybook/cli@v4.0.0-alpha.24` //The alpha versions are compatible with the latest Webpack 4 . Get either 4.0 alpha or later.
+ - `sudo npm i -g @storybook/cli` //The alpha versions are compatible with the latest Webpack 4 . Get either 4.0 alpha or later.
  - `cd tutorial-storybook-angular`
  - `storybook init` //this adds all the stuff we Storybook needs to the project
  - `storybook start` //start storybook server
