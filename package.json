@@ -9,8 +9,8 @@
     "storybook": "ng run angular-latest:storybook",
     "build-storybook": "ng run angular-latest:build-storybook",
     "serve-storybook": "http-server ./dist/storybook -p 6006",
-    "test-storybook": "bash -c 'npm run storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -u http://localhost:6006/; kill $PID'",
-    "test-storybook-static": "bash -c 'npm run build-storybook && npm run serve-storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -f applitools.config.js -u http://localhost:6006/; kill $PID'"
+    "test-storybook": "bash -c 'npm run storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -f applitools.config.js -u http://localhost:6006/; kill $PID'",
+    "test-storybook-static": "bash -c 'npm run build-storybook && npm run serve-storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -u http://localhost:6006/; kill $PID'"
   },
   "private": true,
   "dependencies": {
