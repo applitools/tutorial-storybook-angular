@@ -9,7 +9,8 @@ const config: StorybookConfig = {
   "addons": [
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
-    getAbsolutePath("@storybook/addon-interactions")
+    getAbsolutePath("@storybook/addon-interactions"),
+    "@storybook/addon-mdx-gfm"
   ],
   "framework": {
     "name": "@storybook/angular",

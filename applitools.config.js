@@ -5,9 +5,15 @@ module.exports = {
   batchName: 'Storybook Angular Tutorial',
   testConcurrency: 10,
   showLogs: false,
-  browser: [
-    { width: 1024, height: 768, name: 'chrome' }, // See https://applitools.com/tutorials/sdks/storybook/browsers for additional supported browsers and devices.
+  browser: [ // See https://applitools.com/tutorials/sdks/storybook/browsers for additional supported browsers and devices.
+    { width: 1024, height: 768, name: 'chrome' },
     // { width: 1024, height: 768, name: 'firefox' },
     // { chromeEmulationInfo: { deviceName: 'Galaxy S20' } },
- ] 
+ ],
+ puppeteerOptions: process.env.GITHUB_ACTIONS
+  ? {
+      executablePath: '/usr/bin/chromium', 
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
+  : undefined, 
 }

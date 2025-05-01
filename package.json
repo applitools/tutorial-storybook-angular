@@ -10,7 +10,7 @@
     "build-storybook": "ng run angular-latest:build-storybook",
     "serve-storybook": "http-server ./dist/storybook -p 6006",
     "test-storybook": "bash -c 'npm run storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -u http://localhost:6006/; kill $PID'",
-    "test-storybook-static": "bash -c 'npm run build-storybook && npm run serve-storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -u http://localhost:6006/; kill $PID'"
+    "test-storybook-static": "bash -c 'npm run build-storybook && npm run serve-storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -f applitools.config.js -u http://localhost:6006/; kill $PID'"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +34,7 @@
     "@storybook/addon-docs": "^8.6.12",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-mdx-gfm": "^8.6.12",
     "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/angular": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
